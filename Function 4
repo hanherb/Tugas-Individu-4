@@ -1,0 +1,21 @@
+#include <iostream>
+#include <conio.h> 
+using namespace std;
+
+int fernando = 55; //variabel ekssternal 
+
+void bravo(); 
+
+void main() 
+{ 
+	cout<<"main () : fernando = "<<fernando<< endl; 
+	bravo(); 
+	cout<<"main () : fernando = "<<fernando<< endl; 
+} 
+
+void bravo() 
+{ 
+	int fernando; // variabel lokal 
+	fernando = 77; 
+	cout<< "bravo() : fernando = "<<fernando<< endl; 
+}
